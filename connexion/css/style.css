@@ -88,6 +88,34 @@ form{
 .field button:hover{
     background-color: #016dcb;
 }
+
+.recup-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recup-field .recup{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 20px;
+    margin: 2px 5px;
+    color: #fff;
+    background-color: #0171d3;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+
+.recup-field .recup:hover{
+    text-decoration: none;
+    background-color: #016dcb;
+}
 .form-link{
     text-align: center;
     margin-top: 10px;
