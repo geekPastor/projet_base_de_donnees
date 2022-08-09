@@ -268,3 +268,63 @@ body .about-us .about .photo img{
     height: 100%;
     object-fit: cover;
 }
+
+body .services{
+    width: 100%;
+    height: 100vh;
+}
+
+body .services h2{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+
+body .services .list__services{
+    max-width: 90%;
+    height: 90%;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+body .services .list__services .services__items{
+    width: 250px;
+    height: 60%;
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+body .services .list__services .services__items h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 30px 20px;
+}
+
+body .services .list__services .services__items p{
+    font-size: 15px;
+    text-align: center;
+    padding: 20px 30px;
+    color: #222;
+}
+
+body .services .list__services .services__items .contact{
+    border: 1px solid #000;
+    width: 40%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 30%;
+    margin-top: 15%;
+    border-radius: 30px;
+    
+}
