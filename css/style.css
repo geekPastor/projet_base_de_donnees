@@ -6,6 +6,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 
 body{
     min-height: 100vh;
@@ -59,11 +63,12 @@ body header nav ul li a{
     text-decoration: none;
     color: #0f010f;
     font-size: 20px;
+    text-transform: uppercase;
 }
 
 section{
     position: relative;
-    top: 7rem;
+    top: 6rem;
 }
 
 /* Debut de la secdtion hero */
@@ -98,5 +103,34 @@ body .hero p{
 body .about-us{
     height: 100vh;
     width: 100%;
-    border: 1px solid #000;
+    
+}
+
+body .about-us h2{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 30px 20px;
+}
+
+body .about-us .about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1120px;
+}
+
+body .about-us .about .about-text{
+    width: 40%;
+    height: 50%;
+}
+
+body .about-us .about .about-text h3{
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+body .about-us .about .about-text p{
+    font-size: 15px;
 }
