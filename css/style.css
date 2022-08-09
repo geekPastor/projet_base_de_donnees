@@ -103,7 +103,6 @@ body .hero p{
 body .about-us{
     height: 100vh;
     width: 100%;
-    
 }
 
 body .about-us h2{
@@ -115,14 +114,15 @@ body .about-us h2{
 
 body .about-us .about{
     display: flex;
-    justify-content: center;
+    margin-left: 200px;
+    justify-content: space-between;
     align-items: center;
     max-width: 1120px;
 }
 
 body .about-us .about .about-text{
     width: 40%;
-    height: 50%;
+    height: 70%;
 }
 
 body .about-us .about .about-text h3{
@@ -133,4 +133,16 @@ body .about-us .about .about-text h3{
 
 body .about-us .about .about-text p{
     font-size: 15px;
+}
+
+body .about-us .about .photo{
+    margin-top: 30px;
+    width: 40%;
+    height: 100%;
+}
+
+body .about-us .about .photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
