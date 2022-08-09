@@ -9,33 +9,37 @@
 </head>
 <body>
     
-    <header>
-        <div class="logo">
-            <img src="./imgs/logo.jpg" alt="Notre logo">
-            <h1>Chrinovic MM</h1>
-        </div>
+    <header>   
+        <nav class="navbar light-mode" role="navigation">
+            <div class="navbar__logo">
+                <img src="./imgs/logo.jpg" alt="Notre logo">
+                <h1>Chrinovic MM</h1>
+            </div>
 
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Our Services</a></li>
-                <li><a href="#">Our Team</a></li>
-                <li><a href="#">Contact Us</a></li>
+            <ul class="navbar__liste">
+                <li class="navbar__link first"><a href="#hero">Home</a></li>
+                <li class="navbar__link second"><a href="#about">About us</a></li>
+                <li class="navbar__link third"><a href="#services">Our Services</a></li>
+                <li class="navbar__link four"><a href="#">Our Team</a></li>
+                <li class="navbar__link fifth"><a href="#">Contact Us</a></li>
             </ul>
+
+            <button class="burger">
+                <span class="bar"></span>
+            </button>
         </nav>
     </header>
 
 
     <main>
-        <section class="hero">
+        <section class="hero" id="hero">
             <h1>Gestion du carnet des etudiants</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam accusamus quo asperiores officiis, quas ducimus debitis commodi, odit facere ab corrupti quis minima sit voluptate. Quo explicabo neque rerum dolore.</p>
         </section>
 
 
 
-        <section class="about-us">
+        <section class="about-us" id="about">
             <h2>About us</h2>
             <main class="about">
                 <div class="about-text">
@@ -64,7 +68,16 @@
                 </div>
             </main>
         </section>
+
+
+        <section class="services" id="services">
+            <h2>Ours services</h2>
+            
+        </section>
     </main>
 
+
+
+    <script src="./js/app.js"></script>
 </body>
 </html>

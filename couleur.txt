@@ -1,0 +1,11 @@
+bleu ciel : #87CEEB
+
+Blanc : #FFFFFF
+
+rose : #FFC0CB
+
+Jaune : #FFFF00
+
+Rouge clair : #FF0000
+
+Grise : #808080

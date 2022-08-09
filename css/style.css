@@ -6,65 +6,185 @@
     font-family: 'Poppins', sans-serif;
 }
 
-html{
-    scroll-behavior: smooth;
+:root{
+    --font-size: 1rem;
+}
+
+.light-mode{
+    --navbar-color:#222;
+    --navbar-bg-color:#f0f0f0;
 }
 
 
+.dark-mode{
+    --navbar-color:#fff;
+    --navbar-bg-color:#000;
+}
+
+html{
+    scroll-behavior: smooth;
+}
 body{
-    min-height: 100vh;
-    max-width: 100%;
+    font-size: var(--font-size);
 }
 
 body header{
     width: 100%;
     height: 100px;
     position: fixed;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 10px;
     z-index: 1;
     background: #f1f1f1;
 }
 
-body header .logo{
+body header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-    margin-left: 30px;
-    width: 350px;
+body header .navbar .navbar__logo{
+    width: 300px;
     height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+
 }
 
-body header .logo img{
+body header .navbar .navbar__logo img{
     width: 100px;
+    height: 100%;
     border-radius: 50%;
-    object-fit: cover;
+}
+body header .navbar .navbar__liste{
+    list-style-type: none;
 }
 
-body header nav ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 30px;
-    width: 600px;
+body header .navbar .navbar__liste .navbar__link{
+    display: inline-block;
 }
 
-body header nav ul li{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    padding: 2px 0;
-}
-
-body header nav ul li a{
-    text-decoration: none;
-    color: #0f010f;
+body header .navbar .navbar__liste .navbar__link a{
+    color: #222;
     font-size: 20px;
-    text-transform: uppercase;
+    text-decoration: none;
 }
+.navbar__liste{
+    width: 0;
+    height: calc(100vh - 65px);
+    position: absolute;
+    top: 65px;
+    right: 0;
+    transition: all .5s ease-in-out;
+    background: var(--navbar-bg-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar__link>a{
+    display: block;
+    padding: 1rem;
+    font-size: 1.6rem;
+    transition: all .4s ease-in-out;
+}
+
+.navbar__link>a:hover{
+    display: block;
+    padding-left: 2rem;
+    letter-spacing: 5px;
+}
+
+.navbar__link{
+    transform: translateX(101%);
+}
+
+.show-nav .navbar__link{
+    transform: translateX(0);
+}
+
+/* Toogle menu */
+
+.burger{
+    display: block;
+    position: relative;
+    padding: 0;
+    width: 45px;
+    height: 45px;
+    border: none;
+    margin-right: 50px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.show-nav .navbar__liste{
+    width: 20%;
+}
+
+.bar{
+    display: block;
+    width: 45px;
+    height: 4px;
+    background: var(--navbar-color);
+    border-radius: 3px;
+    transition: all .5s ease-in-out;
+}
+
+.bar::before, .bar::after{
+    content: "";
+    width: 45px;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    background: var(--navbar-color);
+    border-radius: 3px;
+    transition: all .5s ease-in-out;
+}
+
+.show-nav .bar{
+    width: 0;
+    background: transparent;
+}
+
+.bar::before{
+    transform: translateY(-12px);
+}
+
+.show-nav .bar::before{
+    transform: rotate(45deg);
+}
+
+.bar::after{
+    transform: translateY(12px);
+}
+
+.show-nav .bar::after{
+    transform: rotate(-45deg);
+}
+
+/* Bonus animations */
+
+.show-nav .first{
+    transition: all 1s ease-out;
+}
+
+.show-nav .second{
+    transition: all 1.1s ease-out;
+}
+
+.show-nav .third{
+    transition: all 1.2s ease-out;
+}
+
+.show-nav .four{
+    transition: all 1.3s ease-out;
+}
+
+.show-nav .fifth{
+    transition: all 1.4s ease-out;
+}
+
+
+
 
 section{
     position: relative;
@@ -118,6 +238,7 @@ body .about-us .about{
     justify-content: space-between;
     align-items: center;
     max-width: 1120px;
+    width: 100%;
 }
 
 body .about-us .about .about-text{
@@ -128,6 +249,7 @@ body .about-us .about .about-text{
 body .about-us .about .about-text h3{
     text-align: center;
     font-size: 25px;
+    margin: 30px;
     text-transform: uppercase;
 }
 
@@ -137,7 +259,7 @@ body .about-us .about .about-text p{
 
 body .about-us .about .photo{
     margin-top: 30px;
-    width: 40%;
+    width: 50%;
     height: 100%;
 }
 
