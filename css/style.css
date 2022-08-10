@@ -335,59 +335,157 @@ body .services .list__services .services__items .contact{
 /* section team */
 
 body .team{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f2f2f2;
+}
+
+
+body .team main{
     position: relative;
-    top: 30rem;
-    width: 100%;
-    height: 80vh;
+    height: 450px;
+    width: 1075px;
+    display: flex;
+    align-items: center;
+    
 }
 
-body .team h2{
-    font-size: 40px;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 4rem;
+body .team main .swiper{
+    width: 950px;
+    transition: all .5s ease;
 }
 
-body .team .team__list{
+body .team main .swiper .content .card{
+    width: 280px;
+    position: relative;
+    background: #fff;
+    border-radius: 20px;
+    margin: 20px 0;
+    transition: all .5s ease;
+}
+
+body .team main .swiper .content .card:hover{
+    cursor: pointer;
+}
+
+
+body .team main .swiper .content .card::before{
+    content: "";
+    position: absolute;
+    height: 45%;
     width: 100%;
-    height: 100%;
+    background: #7d2ae8;
+    border-radius: 20px 20px 0 0;
+}
+
+
+body .team main .swiper .content .card .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    z-index: 100;
+}
+
+body .team main .swiper .content  .card .card-content .media-icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+
+body .team main .swiper .content  .card .card-content .media-icons i{
+    color: #fff;
+    opacity: 0.6;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+body .team main .swiper .content  .card .card-content .media-icons i i:hover{
+    opacity: 1;
+}
+
+body .team main .swiper .content  .card .card-content .identite{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    color: #333;
+}
+
+
+body .team main .swiper .content  .card .card-content .identite .name{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+body .team main .swiper .content  .card .card-content .identite .profession{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+body .team main .swiper .content  .card .card-content .button{
+    width: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    margin-top: 20px;
 }
 
-
-body .team .team__list .team__member{
-    width: 300px;
-    height: 60%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    border: 1px solid #000;
+body .team main .swiper .content  .card .card-content .button button{
+    background: #7d2ae8;
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 8px 22px;
     border-radius: 20px;
-    margin-bottom: 20px;
+    font-size: 14px;
+    transition: all .5s ease;
+    cursor: pointer;
 }
 
-body .team .team__list .team__member img{
-    width: 200px;
-    height: 200px;
+body .team main .swiper .content  .card .card-content .button button:hover{
+    background: #6616d0;
+}
+
+
+.swiper-pagination-bullet{
+    height: 7px;
+    width: 20px;
+    border-radius: 25px;
+    background: #6616d0;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    opacity: 0.7;
+    color: #7d2ae8;
+    transition: all .5s ease;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover{
+    opacity: 1;
+}
+
+body .team main .swiper .content .card .image{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    padding: 3px;
+    background: #7d2ae8;
+}
+
+body .team main .swiper .content .card .image img{
+    height: 100%;
+    width: 100%;
     border-radius: 50%;
     object-fit: cover;
-
-}
-
-body .team .team__list .team__member p{
-    font-size: 20px;
-    font-weight: bold;
-    margin: 3px 2px;
-}
-
-body .team .team__list .team__member p span{
-    text-transform: uppercase;
-    color: crimson;
-}
-
-body .team .team__list .team__member h3{
-    font-size: 25px;
-    margin: 15px;
+    border: 3px solid #fff;
 }
