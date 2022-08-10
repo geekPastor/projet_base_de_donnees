@@ -296,11 +296,10 @@ body .services .list__services{
 }
 
 body .services .list__services .services__items{
-    width: 250px;
+    width: 400px;
     height: 60%;
     border: 1px solid #000;
     border-radius: 20px;
-    margin-bottom: 20px;
 }
 
 body .services .list__services .services__items h3{
@@ -308,13 +307,13 @@ body .services .list__services .services__items h3{
     text-transform: uppercase;
     font-size: 20px;
     font-weight: bold;
-    margin: 30px 20px;
+    margin: 30px 0;
 }
 
 body .services .list__services .services__items p{
     font-size: 15px;
     text-align: center;
-    padding: 20px 30px;
+    padding: 20px;
     color: #222;
 }
 
@@ -327,7 +326,7 @@ body .services .list__services .services__items .contact{
     align-items: center;
     text-align: center;
     margin-left: 30%;
-    margin-top: 15%;
+    margin-top: 15px;
     border-radius: 30px;
     
 }
