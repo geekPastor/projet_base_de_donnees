@@ -9,16 +9,37 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="../css/style.css">
                 
        
         <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
                         
     </head>
     <body>
+        <header>   
+            <nav class="navbar light-mode" role="navigation">
+                <div class="navbar__logo">
+                    <img src="../imgs/logo.jpg" alt="Notre logo">
+                    <h1>Chrinovic MM</h1>
+                </div>
+    
+                <ul class="navbar__liste">
+                    <li class="navbar__link first"><a href="../index.html#hero">Home</a></li>
+                    <li class="navbar__link second"><a href="../index.html#about">About us</a></li>
+                    <li class="navbar__link third"><a href="../index.html#services">Our Services</a></li>
+                    <li class="navbar__link four"><a href="../index.html#team">Our Team</a></li>
+                    <li class="navbar__link fifth"><a href="../index.html#">Contact Us</a></li>
+                </ul>
+    
+                <button class="burger">
+                    <span class="bar"></span>
+                </button>
+            </nav>
+        </header>
         <section class="container forms">
             <div class="form login">
                 <div class="form-content">
-                    <header>Login</header>
+                    <h1 class="log">Login</h1>
                     <form action="#">
                         <div class="field input-field">
                             <input type="email" placeholder="Email" class="input">
@@ -48,5 +69,6 @@
 
         <!-- JavaScript -->
         <script src="js/script.js"></script>
+        <script src="../js/app.js"></script>
     </body>
 </html>

@@ -81,6 +81,11 @@
     border-collapse: collapse;
 }
 
+th{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 td, th /* Mettre une bordure sur les td ET les th */
 {
 border: 1px solid black;
