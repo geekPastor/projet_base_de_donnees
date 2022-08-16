@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Formulaire d'inscription</title> 
+</head>
+<body>
+
+    <header>   
+        <nav class="navbar light-mode" role="navigation">
+            <div class="navbar__logo">
+                <img src="../imgs/logo.jpg" alt="Notre logo">
+                <h1>Chrinovic MM</h1>
+            </div>
+
+            <ul class="navbar__liste">
+                <li class="navbar__link first"><a href="../index.html#hero">Home</a></li>
+                <li class="navbar__link second"><a href="../index.html#about">About us</a></li>
+                <li class="navbar__link third"><a href="../index.html#services">Our Services</a></li>
+                <li class="navbar__link four"><a href="../index.html#team">Our Team</a></li>
+                <li class="navbar__link fifth"><a href="../index.html#">Contact Us</a></li>
+            </ul>
+
+            <button class="burger">
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <header>Registration</header>
+
+        <form action="#">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Details Personel</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Nom</label>
+                            <input type="text" placeholder="Votre nom" name="nom_etudiant" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Post-nom</label>
+                            <input type="text" placeholder="Votre post-nom" name="postnom_etudiant" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Prenom</label>
+                            <input type="text" placeholder="Votre prenom" name="prenom_etudiant" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" placeholder="Enter birth date" name="date_naissance_etudiant" required>
+                        </div>
+
+                        <div class="input-field">
+                                <label>Promotion</label>
+                                <select required>
+                                    <option disabled selected>Select promotion</option>
+                                    <option>Prepa</option>
+                                    <option>L1</option>
+                                    <option>L2</option>
+                                    <option>L3</option>
+                                </select>
+                            </div>
+
+                            <div class="input-field">
+                                    <label>Filiere</label>
+                                    <select>
+                                            <option disabled selected>Select promotion</option>
+                                            <option>Genie logiciel</option>
+                                            <option>Management de système informatique</option>
+                                            <option>Design et Multimedia</option>
+                                            <option>Reseau et Administration système</option>
+                                            <option>Reseau et Telecommunication</option>
+                                        </select>
+                            </div>
+
+                        
+                    </div>
+                </div>
+
+                <div class="details ID">
+
+                    <button class="nextBtn">
+                        <span class="btnText">Next</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div> 
+            </div>
+
+            <div class="form second">
+                <div class="details address">
+                    <span class="title"> Details (sute)</span>
+
+                    <div class="fields">
+
+                        <div class="input-field">
+                                <label>Biographie</label>
+                                <textarea placeholder="Votre Biographie" name="biographie_etudiant" required id="" cols="30" rows="10"></textarea>
+                            </div>
+
+                            <div class="input-field">
+                                    <label>Log in</label>
+                                    <input type="text" placeholder="Votre Login" name="degre_etudiant" required>
+                                </div>
+
+                        <div class="input-field">
+                            <label>Mot de passe</label>
+                            <input type="text" placeholder="Votre mot de passe" name="degre_etudiant" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details family">
+                   
+
+                    <div class="buttons">
+                        <div class="backBtn">
+                            <i class="uil uil-navigator"></i>
+                            <span class="btnText">Back</span>
+                        </div>
+                        
+                        <button class="sumbit">
+                            <span class="btnText">Submit</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                    </div>
+                </div> 
+            </div>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
