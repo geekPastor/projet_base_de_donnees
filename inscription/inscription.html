@@ -21,12 +21,22 @@
         <form action="#">
             <div class="form first">
                 <div class="details personal">
-                    <span class="title">Personal Details</span>
+                    <span class="title">Details Personel</span>
 
                     <div class="fields">
                         <div class="input-field">
-                            <label>First Name</label>
-                            <input type="text" placeholder="Enter your name" name="nom_etudiant" required>
+                            <label>Nom</label>
+                            <input type="text" placeholder="Votre nom" name="nom_etudiant" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Post-nom</label>
+                            <input type="text" placeholder="Votre post-nom" name="postnom_etudiant" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Prenom</label>
+                            <input type="text" placeholder="Votre prenom" name="prenom_etudiant" required>
                         </div>
 
                         <div class="input-field">
@@ -35,29 +45,29 @@
                         </div>
 
                         <div class="input-field">
-                            <label>Promotion</label>
-                            <input type="text" placeholder="Enter your Promotion" name="promotion_etudiant" required>
-                        </div>
+                                <label>Promotion</label>
+                                <select required>
+                                    <option disabled selected>Select promotion</option>
+                                    <option>Prepa</option>
+                                    <option>L1</option>
+                                    <option>L2</option>
+                                    <option>L3</option>
+                                </select>
+                            </div>
 
-                        <div class="input-field">
-                            <label>Second name</label>
-                            <input type="text" placeholder="Enter your Second-name" name="prenom_etudiant" required>
-                        </div>
+                            <div class="input-field">
+                                    <label>Filiere</label>
+                                    <select required>
+                                            <option disabled selected>Select promotion</option>
+                                            <option>Genie logiciel</option>
+                                            <option>Management de système informatique</option>
+                                            <option>Design et Multimedia</option>
+                                            <option>Reseau et Administration système</option>
+                                            <option>Reseau et Telecommunication</option>
+                                        </select>
+                            </div>
 
-                        <div class="input-field">
-                            <label>Gender</label>
-                            <select required>
-                                <option disabled selected>Select gender</option>
-                                <option>Male</option>
-                                <option>Female</option>
-                                <option>Others</option>
-                            </select>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Biographie</label>
-                            <input type="text" placeholder="Enter your biographie" name="biographie_etudiant" required>
-                        </div>
+                        
                     </div>
                 </div>
 
@@ -72,22 +82,23 @@
 
             <div class="form second">
                 <div class="details address">
-                    <span class="title">Address Details</span>
+                    <span class="title"> Details (sute)</span>
 
                     <div class="fields">
-                        <div class="input-field">
-                            <label>Address Type</label>
-                            <input type="text" placeholder="Permanent or Temporary" name="adresse_etudiant" required>
-                        </div>
 
                         <div class="input-field">
-                            <label>Filiere</label>
-                            <input type="text" placeholder="Enter Departement" name="Nom_filiere" required>
-                        </div>
+                                <label>Biographie</label>
+                                <textarea placeholder="Votre Biographie" name="biographie_etudiant" required id="" cols="30" rows="10"></textarea>
+                            </div>
+
+                            <div class="input-field">
+                                    <label>Log in</label>
+                                    <input type="text" placeholder="Votre Login" name="degre_etudiant" required>
+                                </div>
 
                         <div class="input-field">
-                            <label>Degree</label>
-                            <input type="text" placeholder="Enter your degree" name="degre_etudiant" required>
+                            <label>Mot de passe</label>
+                            <input type="text" placeholder="Votre mot de passe" name="degre_etudiant" required>
                         </div>
                     </div>
                 </div>

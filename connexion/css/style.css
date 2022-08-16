@@ -1,6 +1,27 @@
 /* Google Fonts - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
+:root{
+    --color1 :#323b58;
+    --color2 : #fac1c0;
+    --color3 : #c08189;
+    --color4 : #6f3857;
+    --color5 : #f0e4e6;
+    --color6 : #dfdfe1;
+    --color7 : #034c52;
+    --color8 : #015c63;
+    --color9 : #017075;
+    --color10 : #f48d79;
+    --color11 : #fda898;
+    --color12 : #ffc0b4;
+    --color13 : #216974;
+    --color14 : #e09453;
+    --color15 : #d1711f;
+    --color16 : #a34828;
+    --color17: #dedfda;
+    --color18 : #ded5d0;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -13,7 +34,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #4070f4;
+    background-color: var(--color18);
     column-gap: 30px;
 }
 .form{
@@ -81,7 +102,7 @@ form{
 }
 .field button{
     color: #fff;
-    background-color: #0171d3;
+    background-color: var(--color18);
     transition: all 0.3s ease;
     cursor: pointer;
 }

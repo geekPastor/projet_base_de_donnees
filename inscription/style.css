@@ -1,4 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+:root{
+    --color1 :#323b58;
+    --color2 : #fac1c0;
+    --color3 : #c08189;
+    --color4 : #6f3857;
+    --color5 : #f0e4e6;
+    --color6 : #dfdfe1;
+    --color7 : #034c52;
+    --color8 : #015c63;
+    --color9 : #017075;
+    --color10 : #f48d79;
+    --color11 : #fda898;
+    --color12 : #ffc0b4;
+    --color13 : #216974;
+    --color14 : #e09453;
+    --color15 : #d1711f;
+    --color16 : #a34828;
+    --color17: #dedfda;
+    --color18 : #ded5d0;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +31,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #4070f4;
+    background: var(--color18);
 }
 .container{
     position: relative;
@@ -93,28 +114,32 @@ form .fields .input-field{
     font-weight: 500;
     color: #2e2e2e;
 }
-.input-field input, select{
+.input-field input, select, textarea{
     outline: none;
     font-size: 14px;
     font-weight: 400;
     color: #333;
     border-radius: 5px;
     border: 1px solid #aaa;
-    padding: 0 15px;
+    padding: 10px 15px;
     height: 42px;
     margin: 8px 0;
 }
+
 .input-field input :focus,
-.input-field select:focus{
+.input-field select:focus, textarea:focus{
     box-shadow: 0 3px 6px rgba(0,0,0,0.13);
 }
+
 .input-field select,
 .input-field input[type="date"]{
     color: #707070;
 }
+
 .input-field input[type="date"]:valid{
     color: #333;
 }
+
 .container form button, .backBtn{
     display: flex;
     align-items: center;
@@ -127,28 +152,34 @@ form .fields .input-field{
     color: #fff;
     border-radius: 5px;
     margin: 25px 0;
-    background-color: #4070f4;
+    background-color: var(--color18);
     transition: all 0.3s linear;
     cursor: pointer;
 }
+
 .container form .btnText{
     font-size: 14px;
     font-weight: 400;
 }
+
 form button:hover{
     background-color: #265df2;
 }
+
 form button i,
 form .backBtn i{
     margin: 0 6px;
 }
+
 form .backBtn i{
     transform: rotate(180deg);
 }
+
 form .buttons{
     display: flex;
     align-items: center;
 }
+
 form .buttons button , .backBtn{
     margin-right: 14px;
 }
