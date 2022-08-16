@@ -62,3 +62,26 @@
 .home form input:nth-child(2):hover{
     cursor: pointer;
 }
+
+.resultat{
+    position: relative;
+    top: 11rem;
+}
+
+.resultat h1{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.resultat table{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+td, th /* Mettre une bordure sur les td ET les th */
+{
+border: 1px solid black;
+}
