@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --color1 :#323b58;
+    --color2 : #fac1c0;
+    --color3 : #c08189;
+    --color4 : #6f3857;
+    --color5 : #f0e4e6;
+    --color6 : #dfdfe1;
+    --color7 : #034c52;
+    --color8 : #015c63;
+    --color9 : #017075;
+    --color10 : #f48d79;
+    --color11 : #fda898;
+    --color12 : #ffc0b4;
+    --color13 : #216974;
+    --color14 : #e09453;
+    --color15 : #d1711f;
+    --color16 : #a34828;
+    --color17: #dedfda;
+    --color18 : #ded5d0;
+    --font-size: 1rem;
+}
+
+.home{
+    position: relative;
+    top: 7rem;
+}
+
+.home form{
+    margin-left: 1000px;
+}
+
+.home form input:nth-child(1){
+    width: 250px;
+    height: 50px;
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid var(--color1);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.home form input:nth-child(2){
+    height: 50px;
+    width: 80px;
+    background: var(--color8);
+    color: var(--color14);
+    border: 1px solid var(--color1);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+    right: 5px;
+}
+
+.home form input:nth-child(2):hover{
+    cursor: pointer;
+}
