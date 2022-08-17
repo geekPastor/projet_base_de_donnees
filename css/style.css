@@ -61,7 +61,12 @@ body header .navbar{
     justify-content: space-between;
 }
 
-body header .navbar .navbar__logo{
+body header .navbar a{
+    text-decoration: none;
+    color: #000;
+}
+
+body header .navbar a .navbar__logo{
     width: 300px;
     height: 100%;
     display: flex;
@@ -70,16 +75,16 @@ body header .navbar .navbar__logo{
 
 }
 
-body header .navbar .navbar__logo img{
+body header .navbar a .navbar__logo img{
     width: 100px;
     height: 100%;
     border-radius: 50%;
 }
-body header .navbar .navbar__liste{
+body header .navbar  .navbar__liste{
     list-style-type: none;
 }
 
-body header .navbar .navbar__liste .navbar__link{
+body header .navbar  .navbar__liste .navbar__link{
     display: inline-block;
 }
 
